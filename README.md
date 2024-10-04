@@ -1,10 +1,9 @@
 # Dart
 
-## Emojis
 🚀 concepto
 🦖 nota 
 🤖 hack  
-🔑 claves
+🔑 clave 
 🥷🏻 ejemplo
 👑 importante
 
@@ -15,7 +14,7 @@
 
 ## 🤖 ¿Por qué usar?
 - Rendimiento.
-- Multiplataforma.
+- Multiplataforma. 🔑
 - Flutter.
 
 ## 👑 ¿Cuándo usar?
@@ -23,3 +22,4 @@
 
 ## 🦖 Notas personales
 Tomar de referencia JS
+

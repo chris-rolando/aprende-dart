@@ -1,14 +1,13 @@
+/**
+* clase 02: 🥷🏻 tipos de datos en Dart
+*/
 
 main() {
 
-  // # 🥷🏻 Tipos de datos en Dart: Infierrir el tipo
-
-  // 🦖 Igual que en JS el compilador infiere que nombre es un String
-  var nombre = "Dart";
+  // # Infierrir el tipo: 🦖 el compilador infiere el tipo de dato
+  var nombre = "Hello Dart";
      
-  // # 👑 Tipos específicos:
-
-  // ## 1- Números
+  // # Tipos específicos: ## 1- Números
 
   int edad = 30;
 
@@ -16,13 +15,12 @@ main() {
   
   double pi = 3.14159;
 
-  // ## 3- Num
-  // 🦖 Puede ser enteros o decimales.
+  // ## 3- Num: 🦖 puede ser int o double
+
   num cantidad = 1111;
 
-  // ## 4- Nulos
+  // ## 4- Nulos: el valor puede no estar definido
 
-  // El valor puede no estar definido o ser desconocido.
   int? generico;
  
   // ## 5- Strings
@@ -33,7 +31,7 @@ main() {
   String nombreCompleto = '$nombre $apellido';
 
   String multilinea = '''
-  ¿Cómo estás?
+  ¿Hey?
   $nombreCompleto 
   ''';
   
@@ -91,21 +89,15 @@ main() {
     };
   */
 
-  Map<int, dynamic> ironman = {
-    1: 'Tony Stark',
-    2: 'Inteligencia y el dinero',
-    3: 9000,
+  Map<String, String> frutas = {
+  'manzana': 'roja',
+  'banana': 'amarilla',
+  'uva': 'morada'
   };
 
-  // print( ironman[3] )
-  Map<String, dynamic> capitan = new Map();
+  // Agregando un nuevo par
+  frutas['pera'] = 'verde';
 
-  capitan.addAll({
-    'nombre': 'Steve',
-    'poder' : 'Soportar droga sin morir',
-    'nivel' : 5000
-  });
-  // capitan.addAll(ironman);
-
-  print( capitan );
+  // 🦖 Los metodos son imilires a JS
+  
 }
