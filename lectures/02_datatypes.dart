@@ -79,8 +79,8 @@ main() {
   print('\nVerificando si existen elemetos');
   bool lemon=fruitsSet.contains("limon");
   print('Contiene limon? $lemon'); // false
-  bool grape=fruitsSet.contains("uva");
-  print('Contiene uva? $grape'); // true
+  // 🥷🏻 Usar {} para interpolar strings
+  print('Contiene uva? ${fruitsSet.contains("uva")}'); // true
 
   print('\nIterando sobre los elementos:');
   for (var fruit in fruitsSet) {
