@@ -1,45 +1,26 @@
-main(){
+/**
+* clase 03: var vs const vs final vs late
+*
+* 🔑 const: es conocida en tiempo de compilación
+* 
+* 🔑 final: una variable que no cambie después de su inicialización.
+* 🤖 uso: constantes de configuración o resultados de cálculos.
 
-  // # 🥷🏻 var vs const vs final
+* 🔑 late: permite incializar variables después.
+* 🤖 uso: cuando el valor de una variable no se conoce pero el tipo si
+*/
 
-  
+main() {
+  late final String testingVar;
 
-int a;
-  final double b = 10;
-  const double c = 10;
+  // Se inicia despues
+  testingVar = 'Este campo se asigna despues de declarar pero no se puede reasignar';
 
-  final double z;
+  // testingVar='!Error si activamos el comentario, por que es final';
 
-
-  late final double x;
-  x = 10;
-
-  print( x );
-
-
-
-  
-  // Late te permitirá incializarla después
-  z = 20;
-
-  // print( 'Resultado: $z');
-
-  // a = 20;
-  // b = 20;
-  // c = 20;
-
-  // final personasFinal = ['Juan', 'Pedro', 'Fernando'];
-  // const personasConst = ['Juan', 'Pedro', 'Fernando'];
-
-  final List<String> personasFinal = ['Juan', 'Pedro', 'Fernando'];
-  List<String> personasConst = const['Juan', 'Pedro', 'Fernando'];
-
-  // personasFinal.add('Maria');
-  // personasConst.add('Maria');
-
-  // personasFinal = [];
-  
-
-  // print(personasConst);
+  print('$testingVar');
 }
+
+
+
 

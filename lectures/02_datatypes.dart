@@ -10,38 +10,38 @@ main() {
   // 1- Infierrir tipos 
   // 🦖 el compilador "adivina" el tipo de dato
   
-  var inferirTipo = "esto es un string!";
-  print('\nTipo inferido: $inferirTipo');
+  var inferredType = "esto es un string!";
+  print('\nTipo inferido: $inferredType');
 
   // 2- Específicar tipos
 
-  int edad = 30;
+  int age = 30;
   double pi = 3.14159;
-  print('\nEjemplo int: $edad \nEjemplo double:$pi');
+  print('\nEjemplo int: $age \nEjemplo double:$pi');
 
   // Num: 🦖 puede ser int o double
-  num cantidad = 1111;
-  print('\nEjemplo num: $cantidad');
+  num height = 1111;
+  print('\nEjemplo num: $height');
 
   // Nulos: 🦖 el valor puede no estar definido
-  int? generico;
-  print('\nEjemplo nulo: $generico');
+  int? canBeNull;
+  print('\nEjemplo nulo: $canBeNull');
 
   bool isActive = true;
   bool isNotActive = !isActive; // invierte el valor
   print('\nEjemplo bool: $isActive y su valor invertido $isNotActive');
 
-  String nombre = 'Pascal';
-  String apellido = 'Stark';
+  String name = 'Pascal';
+  String lastname = 'Stark';
 
-  String nombreCompleto = '\nEjemplo de string $nombre $apellido \n';
-  print(nombreCompleto);
+  String fullname = '\nEjemplo de string $name $lastname \n';
+  print(fullname);
 
-  String multilinea = '''
+  String multi = '''
   Ejemplo    multi linea
   respEta el formato asignado
   ''';
-  print(multilinea);
+  print(multi);
 
   // Lists - Listas
   // 🚀 Almacena colección ordenada de elementos del mismo tipo
@@ -51,17 +51,17 @@ main() {
   print('\nEjemplo de Lista');
 
   // Declarando una List
-  List<String> frutas = ['manzana', 'banana', 'pera'];
+  List<String> fruits = ['manzana', 'banana', 'pera'];
 
   // Agregando un nuevo elemento
-  frutas.add('fresa');
+  fruits.add('fresa');
 
   print('\nAccediendo a un elemento por índice 1');
-  print(frutas[1]); // banana?
+  print(fruits[1]); // banana?
   
   print('\nIterando sobre los elementos:');
-  for (var fruta in frutas) {
-    print(fruta);
+  for (var fruit in fruits) {
+    print(fruit);
   }
 
   // Sets
@@ -71,20 +71,20 @@ main() {
   print('\nEjemplo de Set');
 
   // Declarando un Set
-  Set<String> masFrutas = {'melon', 'sandia', 'aguacate'};
+  Set<String> fruitsSet = {'melon', 'sandia', 'aguacate'};
 
   // Agregando un nuevo elemento
-  masFrutas.add('uva');
+  fruitsSet.add('uva');
 
   print('\nVerificando si existen elemetos');
-  bool lemon=masFrutas.contains("limon");
+  bool lemon=fruitsSet.contains("limon");
   print('Contiene limon? $lemon'); // false
-  bool grape=masFrutas.contains("uva");
+  bool grape=fruitsSet.contains("uva");
   print('Contiene uva? $grape'); // true
 
   print('\nIterando sobre los elementos:');
-  for (var fruta in masFrutas) {
-    print(fruta);
+  for (var fruit in fruitsSet) {
+    print(fruit);
   }
 
   // Maps - Diccionarios - Objetos literales
@@ -98,17 +98,17 @@ main() {
   print('\nMapa de frutas');
 
   // Declarando un map
-  Map<String, String> frutasMap = {
+  Map<String, String> fruitsMap = {
     'manzana': 'roja',
     'banana': 'amarilla',
     'uva': 'morada'
   };
 
   // Agregando elementos
-  frutasMap['pera'] = 'verde';
+  fruitsMap['pera'] = 'verde';
 
   print('\nIterando sobre los elementos:');
-  for (var fruta in frutasMap.keys) {
-    print('La $fruta es ${frutasMap[fruta]}');
+  for (var fruit in fruitsMap.keys) {
+    print('La $fruit es ${fruitsMap[fruit]}');
   }
 }
