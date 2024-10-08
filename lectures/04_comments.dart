@@ -1,5 +1,6 @@
 /**
-* clase 04: comentarios
+* clase 04: Guia comentarios
+* 🦖 Tomar de referencia JS
 */
 
 main() {
