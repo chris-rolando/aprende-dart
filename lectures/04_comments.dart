@@ -3,8 +3,6 @@
 */
 
 main() {
-
-
 /**
  * comentario 
  * multilinea
@@ -13,6 +11,5 @@ main() {
 // comentario de linea
 
 // Comentario de documentación:
-/// Recibe un [nombre] y se concatena con el [mensaje]
-
+  /// Recibe un [nombre] y se concatena con el [mensaje]
 }

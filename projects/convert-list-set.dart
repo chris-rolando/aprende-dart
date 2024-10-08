@@ -17,7 +17,7 @@ void main() {
   ];
 
   // Imprimir lista original
-  print('Ejemplo: Convertir list en set para eliminar duplicados:');
+  print('Ejemplo: Convertir "list" en "set" para eliminar duplicados:');
   print('\nFrutas con duplicados');
   print('Entrada: $fruitsList');
 

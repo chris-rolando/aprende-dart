@@ -14,13 +14,10 @@ main() {
   late final String testingVar;
 
   // Se inicia despues
-  testingVar = 'Este campo se asigna despues de declarar pero no se puede reasignar';
+  testingVar =
+      'Este campo se asigna despues de declarar pero no se puede reasignar';
 
   // testingVar='!Error si activamos el comentario, por que es final';
 
   print('$testingVar');
 }
-
-
-
-

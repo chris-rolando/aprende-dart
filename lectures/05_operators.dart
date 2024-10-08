@@ -34,6 +34,4 @@ void main() {
   double finalPrice = originalPrice - discountAmount;
 
   print('El precio final con descuento es: \$$finalPrice');
-
-
 }

@@ -1,5 +1,6 @@
 /**
 * clase 02: tipos de datos.
+* 🔑 Muestra el uso de tipos de datos
 * 🥷🏻 Dart puede inferir tipos, 👑 tratar de no hacerlo.
 * 🤖 Sintaxis: tipo_de_dato nombre_de_variable = valor_asignado;
 */
@@ -7,10 +8,10 @@
 main() {
   print('Clase 02: Tipos de datos en Dart');
 
-  // 1- Infierrir tipos 
+  // 1- Infierrir tipos
   // 🦖 el compilador "adivina" el tipo de dato
-  
-  var inferredType = "esto es un string!";
+
+  var inferredType = "es un string!";
   print('\nTipo inferido: $inferredType');
 
   // 2- Específicar tipos
@@ -58,7 +59,7 @@ main() {
 
   print('\nAccediendo a un elemento por índice 1');
   print(fruits[1]); // banana?
-  
+
   print('\nIterando sobre los elementos:');
   for (var fruit in fruits) {
     print(fruit);
@@ -77,7 +78,7 @@ main() {
   fruitsSet.add('uva');
 
   print('\nVerificando si existen elemetos');
-  bool lemon=fruitsSet.contains("limon");
+  bool lemon = fruitsSet.contains("limon");
   print('Contiene limon? $lemon'); // false
   // 🥷🏻 Usar {} para interpolar strings
   print('Contiene uva? ${fruitsSet.contains("uva")}'); // true
