@@ -5,7 +5,7 @@
 
 void main() {
 
-  // ejemplo operadores aritmeticos
+  // ejemplo operadores aritméticos
 
   print('-- Calcular área y perímetro de un triangulo --');
   // dimensiones del rectángulo
