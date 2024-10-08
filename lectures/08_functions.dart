@@ -1,24 +1,37 @@
 /**
-* clase 08: 🥷🏻 Guia de funciones en Dart
-* 🔑 
+* clase 08: 🥷🏻 Guia funciones
+* 🦖 Tomar de referencia JS
 */
 
 void main() {
 
-  var mensaje = funcionConRetorno();
+  voidFun();
+  var myReturnFuntion = returnFun();
+  print(myReturnFuntion);
 
-  print(mensaje);
+  var myOptionalParam = optionalParam('Mr');
+  print(myOptionalParam);
+  namedParam(age: 30, mail: 'email@site.com');
 
 }
 
-
-void funcionSinRetorno(){
+// Declara una funcion que no retorna nada
+void voidFun(){
 print('no retorno nada?');
 }
 
-/// Declaro una funcion que retornar un string
-String funcionConRetorno() {
-
+// Declara una funcion que retornar un string
+String returnFun() {
   return 'retorno un string!';
-
 }
+
+String optionalParam(String name, [String lastname = 'Pascal']) {
+  return 'Hola, $name $lastname!';
+}
+
+void namedParam({required String? mail, int age=30}) {
+  print('Edad: $age');
+  print('Correo: $mail');
+}
+
+int arrowFun(int a, int b) => a + b;
