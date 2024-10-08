@@ -1,6 +1,5 @@
 /**
 * clase 01: hola mundo
-* 🔑 Muestra un sencillo hola mundo
 */
 
 main() {
