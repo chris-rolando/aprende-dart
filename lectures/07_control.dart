@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:io';
 import 'dart:math';
 
@@ -23,6 +24,7 @@ main() {
     stdout.writeln('Menor de edad');
   }
 
+  
 // Ejemplo #2: for
   print('\n-- Lista de frutas --\n');
   List<String> fruits = ['manzana', 'banana', 'pera', 'uva'];
@@ -74,36 +76,52 @@ main() {
   } while (number != 0);
 
   print("La suma total es: $sum");
+  
 
-// Ejemplo 7: for con etiquetas
+// Ejemplo 7: for & labels
+// 🚀 Uso: control sobre la salida de bucles anidados
 
-  outerLoop:
-  int player1Position = 0;
-  int player2Position = 0;
-  int meta = 10;
+  print('Juego de dados, ¡el primero en sumar 10 gana!');
+
+  int player1Total = 0;
+  int player2Total = 0;
+  bool winner= false; 
+  final int meta = 10;
+  
 
   // Simulación de tirar un dado
-  int tirarDado() => Random().nextInt(6) + 1;
+  
+  int play() => Random().nextInt(6) + 1;
 
   outerLoop:
-  for (int ronda = 1; ronda <= 3; ronda++) {
-    print("Ronda $ronda");
+  for (int turn = 1; turn <= 3; turn++) {
+    print("\nRonda $turn");
 
     // Jugador 1
-    player1Position += tirarDado();
-    print("Jugador 1 saco avanza a la casilla ${player1Position}");
-    if (player1Position >= meta) {
+    player1Total += play();
+    print("Jugador 1 acumula ${player1Total}");
+    if (player1Total >= meta) {
       print("¡El jugador 1 ha ganado!");
+      winner = true;
       break outerLoop; // Termina el juego
     }
 
     // Jugador 2
-    player2Position += tirarDado();
-    print("Jugador 2 avanza a la casilla ${player2Position}");
-    if (player2Position >= meta) {
+    player2Total += play();
+    print("Jugador 2 acumula ${player2Total}");
+    if (player2Total >= meta) {
       print("¡El jugador 2 ha ganado!");
+      winner = true;
       break outerLoop; // Termina el juego
     }
   }
+  // Verificación después de las 3 rondas, en caso de que nadie ganara
+  if (!winner) {
+    print("¡Game over! ambos perdieron");
+  }
+
+  /*
+  * 🦖 Al ejecuarse break outerLoop rompe el for en la ronda actual
+  */
   
 }
