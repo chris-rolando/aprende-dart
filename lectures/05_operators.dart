@@ -1,10 +1,11 @@
 /**
-* clase 05: operadores
-* 🦖 Son muchos operadoes, tomar de referencia JS
+* clase 05: Guia operadores
+* 🦖 Tomar de referencia JS
 */
 
 void main() {
-  // ejemplo #1
+
+  // ejemplo operadores aritmeticos
 
   print('-- Calcular área y perímetro de un triangulo --');
   // dimensiones del rectángulo
