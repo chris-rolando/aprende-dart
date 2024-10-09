@@ -1,16 +1,16 @@
 /**
-* clase 08: 🥷🏻 Guia funciones
+* clase 08: Guia funciones
 * 🦖 Tomar de referencia JS
 */
 
 void main() {
 
   voidFun();
-  var myReturnFuntion = returnFun();
-  print(myReturnFuntion);
+  var returnFuntion = returnFun();
+  print(returnFuntion);
 
-  var myOptionalParam = optionalParam('Mr');
-  print(myOptionalParam);
+  var _optionalParam = optionalParam('Mr');
+  print(_optionalParam);
   namedParam(age: 30, mail: 'email@site.com');
 
 }
