@@ -3,9 +3,11 @@
 🚀 concepto
 🦖 nota 
 🤖 hack  
-🔑 clave 
 🥷🏻 ejemplo
+🔑 clave 
 👑 importante
+👍 completado
+
 
 ## 🚀 ¿Que es?
 - De propósito general ( 🔑 principalmente apps móviles).
